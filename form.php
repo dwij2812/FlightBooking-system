@@ -85,25 +85,30 @@
                 </div>
                 <center>
                     <br><b><div class="mdl-typography--title">OCCUPATION:</div></b><br>
+                    <span class="mdl-radio__label">Student</span>
                     <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option1">
                 <input type="radio" id="option1" class="mdl-radio__button" name="options" value="1">
-                <span class="mdl-radio__label">Student</span>
+                
         </label><br>
+                <span class="mdl-radio__label">Teacher</span>
                     <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option2">
                 <input type="radio" id="option2" class="mdl-radio__button" name="options" value="2">
-                <span class="mdl-radio__label">Teacher</span>
+                
         </label><br>
+                <span class="mdl-radio__label">Employee</span>
                     <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option3">
                 <input type="radio" id="option3" class="mdl-radio__button" name="options" value="3">
-                <span class="mdl-radio__label">Employee</span>
+                
         </label><br>
+                <span class="mdl-radio__label">Senior Citizen</span>
                     <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option4">
                 <input type="radio" id="option4" class="mdl-radio__button" name="options" value="4">
-                <span class="mdl-radio__label">Senior Citizen</span>
+                
         </label><br>
+                <span class="mdl-radio__label">Armed forces</span>
                     <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option5">
                 <input type="radio" id="option5" class="mdl-radio__button" name="options" value="5">
-                <span class="mdl-radio__label">Armed forces</span>
+                
         </label><br><br><br>
                     <center>
             </div>
