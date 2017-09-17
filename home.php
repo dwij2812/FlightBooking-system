@@ -1,5 +1,4 @@
 <html>
-
 <head>
     <link rel="stylesheet" href="Front with CSS.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -56,15 +55,15 @@
                         <br>
                         </div>
                         <hr>
-                        <form action="file.php">
+                        <form action="searchresultsmodified.php" method="POST">
                             <br>
                             <div>
                             <div class="mdl-typography--subtitle" for="Source">Journey Date:</div>
-                            <input type="date" id="journey_date" required>
+                            <input type="date" name="journey_date" required>
                             </div>
                             <div>
                             <div class="mdl-typography--subtitle" for="Source">Return Date</div>
-                            <input type="date" id="return_date" required>
+                            <input type="date" name="return_date" required>
                             </div>
                             <Br>
                             <br>
@@ -101,7 +100,7 @@
                             <br>
                             <div class="mdl-shadow--16dp" style="background-color:#000000"><br>
                             <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-                        <div class="mdl-typography--subtitle" style="color:black;font-weight:bolder">Search for Flights</div>
+                        <div class="mdl-typography--subtitle" style="color:black;font-weight:bolder" name="Search">Search for Flights</div>
                     </button>
                     <br><br>
                     </div>
