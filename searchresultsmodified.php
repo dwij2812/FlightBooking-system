@@ -87,10 +87,8 @@ if (isset($_POST['Search']))
             </tbody>
 </table>
             <br><br><div class="mdl-shadow--16dp" style="background-color:#000000"><br>
-                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-                        <div class="mdl-typography--subtitle" style="color:black;font-weight:bolder" name="SA">Search Other Flights</div>
-                    </button>
-                    <br><br>
+            <a class="mdl-navigation__link" href="home.php"><div class="mdl-typography--title" style="color:#f4b342">Search Other Flights</div></a>
+                    <br>
                     </div>
         </form>
         </div>
