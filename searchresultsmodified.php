@@ -80,15 +80,20 @@ if (isset($_POST['Search']))
                     echo "<td>" . $row['Dep'] . "</td>";
                     echo "<td>" . $row['Arr'] . "</td>";
                     echo "<td>" . $row['Fare'] . "</td>";
-                    echo "<td> <button class=\"mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent\"><div class=\"mdl-typography--subtitle\" style=\"color:black;font-weight:bolder\" name=\"Book\">Book Now</div></td>";
+                    echo "<td><label class=\"mdl-radio mdl-js-radio mdl-js-ripple-effect\" for=\"".$row['F_no']."\">
+                    <input type=\"radio\" id=\"".$row['F_no']."\" class=\"mdl-radio__button\" name=\"options\" value=\"".$row['F_no']."\">
+                    </label></td>";
                     echo "</tr>";
                 }
 	        ?>
             </tbody>
 </table>
-            <br><br><div class="mdl-shadow--16dp" style="background-color:#000000"><br>
-            <a class="mdl-navigation__link" href="home.php"><div class="mdl-typography--title" style="color:#f4b342">Search Other Flights</div></a>
-                    <br>
+            <br><br>
+            <div class="mdl-shadow--16dp" style="background-color:#000000"><br>
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                        <div class="mdl-typography--subtitle" style="color:black;font-weight:bolder" name="Search">Search for Flights</div>
+                    </button>
+                    <br><br>
                     </div>
         </form>
         </div>
