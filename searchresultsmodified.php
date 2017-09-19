@@ -91,7 +91,7 @@ if (isset($_POST['Search']))
             <br><br>
             <div class="mdl-shadow--16dp" style="background-color:#000000"><br>
                             <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-                        <div class="mdl-typography--subtitle" style="color:black;font-weight:bolder" name="Search">Search for Flights</div>
+                        <div class="mdl-typography--subtitle" style="color:black;font-weight:bolder" name="Search">Proceed to Book</div>
                     </button>
                     <br><br>
                     </div>
