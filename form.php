@@ -43,7 +43,7 @@
                 <!-- Your content goes here -->
 
                 <center>
-                    <form action="#">
+                    <form action="signedup.php" method="POST">
 <br><br>
                         <div class="demo-card-wide mdl-card mdl-shadow--16dp">
                             <b> <div class="mdl-shadow--16dp" style="background-color:#000000">
@@ -52,21 +52,31 @@
                         <br><br>
                         </div>
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                <input class="mdl-textfield__input" type="text" id="First Name">
-                                <label class="mdl-textfield__label" for="First Name">First Name</label>
+                                <input class="mdl-textfield__input" type="text" id="First-Name" name="First-Name">
+                                <label class="mdl-textfield__label" for="First-Name">First Name</label>
                             </div>
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                <input class="mdl-textfield__input" type="text" id="Last Name">
-                                <label class="mdl-textfield__label" for="Last Name">Last Name</label>
-                            </div>
-                        
+                                <input class="mdl-textfield__input" type="text" id="Last-Name" name="Last-Name">
+                                <label class="mdl-textfield__label" for="Last-Name">Last Name</label>
+                            </div>    
                                 <br>
+                                <div class="mdl-shadow--16dp" style="background-color:#000000">
+                        <br>
+                        <div class="mdl-typography--title" style="color:#ffffff">Email Id</div>
+                        <br><br>
+                        </div>
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="Email" name="Email">
+                                <label class="mdl-textfield__label" for="Email">Email Id</label>
+                            </div>
+                            <br>
+                            
                                 <div class="mdl-shadow--16dp" style="background-color:#000000">
                         <br>
                         <div class="mdl-typography--title" style="color:#ffffff">Date Of Birth</div>
                         <br>
                         </div><br><br>
-                        <input type="date"><br>
+                        <input type="date" id="DOB" name="DOB"><br>
                         <br>
                         <br>
 
@@ -78,11 +88,11 @@
                         <br>
                         <div>
                             <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
-                <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1">
+                <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="Male">
                 <span class="mdl-radio__label">Male</span>
         </label>
                             <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
-                <input type="radio" id="option-2" class="mdl-radio__button" name="options" value="2">
+                <input type="radio" id="option-2" class="mdl-radio__button" name="options" value="Female">
                 <span class="mdl-radio__label">Female</span>
         </label>
                             <br><br><br>
@@ -94,7 +104,7 @@
                         <br>
                         </div><br><br>
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" type="text" id="Nationality">
+                    <input class="mdl-textfield__input" type="text" id="Nationality" name="Nationality">
                     <label class="mdl-textfield__label" for="Nationality">Nationality</label>
                 </div>
                 <center>
@@ -104,28 +114,28 @@
                         <br><br>
                         </div><br>
                     <span class="mdl-radio__label">Student</span>
-                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option1">
-                <input type="radio" id="option1" class="mdl-radio__button" name="options" value="1">
+                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="Student">
+                <input type="radio" id="Student" class="mdl-radio__button" name="occupation" value="Student">
                 
         </label><br>
                 <span class="mdl-radio__label">Teacher</span>
-                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option2">
-                <input type="radio" id="option2" class="mdl-radio__button" name="options" value="2">
+                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="Teacher">
+                <input type="radio" id="Teacher" class="mdl-radio__button" name="occupation" value="Teacher">
                 
         </label><br>
                 <span class="mdl-radio__label">Employee</span>
-                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option3">
-                <input type="radio" id="option3" class="mdl-radio__button" name="options" value="3">
+                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="Employee">
+                <input type="radio" id="Employee" class="mdl-radio__button" name="occupation" value="Employee">
                 
         </label><br>
                 <span class="mdl-radio__label">Senior Citizen</span>
-                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option4">
-                <input type="radio" id="option4" class="mdl-radio__button" name="options" value="4">
+                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="Senior_Citizen">
+                <input type="radio" id="Senior_Citizen" class="mdl-radio__button" name="occupation" value="Senior Citizen">
                 
         </label><br>
                 <span class="mdl-radio__label">Armed forces</span>
-                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option5">
-                <input type="radio" id="option5" class="mdl-radio__button" name="options" value="5">
+                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="Armed_forces">
+                <input type="radio" id="Armed_forces" class="mdl-radio__button" name="occupation" value="Armed forces">
                 
         </label><br><br><br>
                     <center>
@@ -138,20 +148,17 @@
                         <br>
                         </div></b><br><br><br>
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" type="text" id="Address_1">
-                    <label class="mdl-textfield__label" for="Address_1">Address Line 1</label>
+                    <input class="mdl-textfield__input" type="text" id="Address" name="Address">
+                    <label class="mdl-textfield__label" for="Address">Address</label>
                 </div>
-                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" type="text" id="Address_2">
-                    <label class="mdl-textfield__label" for="Address_2">Address Line 2</label>
-                </div>
+               
                 <br>
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" type="text" id="City">
+                    <input class="mdl-textfield__input" type="text" id="City" name="City">
                     <label class="mdl-textfield__label" for="City">City</label>
                 </div>
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" type="text" id="State">
+                    <input class="mdl-textfield__input" type="text" id="State" name="State">
                     <label class="mdl-textfield__label" for="State">State</label>
                 </div>
                 <br>
@@ -163,8 +170,8 @@
                         <br>
                         </div></b><br>
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" type="text" id="Mobile No">
-                    <label class="mdl-textfield__label" for="Mobile No">Mobile No</label>
+                    <input class="mdl-textfield__input" type="text" id="Mobile-No" name="Mobile-No">
+                    <label class="mdl-textfield__label" for="Mobile-No">Mobile No</label>
                 </div>
                 <b> <br><div class="mdl-shadow--16dp" style="background-color:#000000">
                         <br>
@@ -172,7 +179,7 @@
                         <br>
                         </div> </b><br>
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" type="text" id="Password">
+                    <input class="mdl-textfield__input" type="password" id="Password" name="Password">
                     <label class="mdl-textfield__label" for="Password">Password</label>
                 </div>
                 <b> <br><div class="mdl-shadow--16dp" style="background-color:#000000">
@@ -181,12 +188,12 @@
                         <br>
                         </div></b><br>
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" type="text" id="r_password">
+                    <input class="mdl-textfield__input" type="password" id="r_password" name="r_password">
                     <label class="mdl-textfield__label" for="r_password">Password</label>
                 </div>
                 <div class="mdl-shadow--16dp" style="background-color:#000000"><br>
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-            <div class="mdl-typography--subtitle" style="color:black;font-weight:bolder" name="Search">Signup</div>
+                <input type="Submit" name="signup" value="Sign Up" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+            
         </button><br><br>
         </div>
             </div>

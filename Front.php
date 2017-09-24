@@ -53,6 +53,7 @@
                     </div>
                     <br>
                     <br><br>
+                    <form action="logged.php" method="POST">
                     <div class="login">
                     <div class="mdl-shadow--16dp" style="background-color:#000000">
                         <br>
@@ -60,24 +61,20 @@
                         <br>
                         </div><br><br>
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                            <input class="mdl-textfield__input" type="text" id="Login ID">
-                            <label class="mdl-textfield__label" for="Login ID">Login Id</label>
+                            <input class="mdl-textfield__input" type="text" id="Loginid" name="Loginid">
+                            <label class="mdl-textfield__label" for="Loginid">Email Id</label>
                         </div>
 
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                            <input class="mdl-textfield__input" type="text" id="Password">
+                            <input class="mdl-textfield__input" type="password" id="Password" name="Password">
                             <label class="mdl-textfield__label" for="Password">Password</label>
                         </div><br><br>
-                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-                        Login
-                    </button>
-                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-        Forgot Password
-        </button>
+                        <input type="submit" name="login" value="Login" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"/>
+                        
+                        <input type="button" name="forget" value="Forgot Password" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"/>
+        
                         <br><br>
-                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-       Sign Up
-        </button>
+                        <input type="button" value="Sign Up" name="redir" onclick="windows.location='form.php';" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"/>
 
                     </div>
                     <br><br><br><br><br><br><br><br>
