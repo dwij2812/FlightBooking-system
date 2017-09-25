@@ -30,7 +30,7 @@ if (isset($_POST['Search']))
                     <a class="mdl-navigation__link" href="form.php">Signup</a>
                     <a class="mdl-navigation__link" href="front.php">Login</a>
                     <a class="mdl-navigation__link" href="Aboutus.php">About Us</a>
-                    <a class="mdl-navigation__link" href="admin.php">Administrators</a>
+                    <a class="mdl-navigation__link" href="Admin_login.php">Administrators</a>
                 </nav>
             </div>
         </header>
@@ -41,7 +41,7 @@ if (isset($_POST['Search']))
                 <a class="mdl-navigation__link" href="form.php">Signup</a>
                 <a class="mdl-navigation__link" href="front.php">Login</a>
                 <a class="mdl-navigation__link" href="Aboutus.php">About Us</a>
-                <a class="mdl-navigation__link" href="admin.php">Administrators</a>
+                <a class="mdl-navigation__link" href="Admin_login.php">Administrators</a>
             </nav>
         </div>
         <main class="mdl-layout__content">

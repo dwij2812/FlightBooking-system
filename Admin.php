@@ -24,7 +24,7 @@
                     <a class="mdl-navigation__link" href="">About</a>
                     <a class="mdl-navigation__link" href="front.php">Login</a>
                     <a class="mdl-navigation__link" href="Aboutus.php">About Us</a>
-                    <a class="mdl-navigation__link" href="admin.php">Administrators</a>
+                    <a class="mdl-navigation__link" href="Admin_login.php">Administrators</a>
                 </nav>
             </div>
         </header>
@@ -35,7 +35,7 @@
                 <a class="mdl-navigation__link" href="">About</a>
                 <a class="mdl-navigation__link" href="front.php">Login</a>
                 <a class="mdl-navigation__link" href="Aboutus.php">About Us</a>
-                <a class="mdl-navigation__link" href="admin.php">Administrators</a>
+                <a class="mdl-navigation__link" href="Admin_login.php">Administrators</a>
             </nav>
         </div>
         <br><br>
