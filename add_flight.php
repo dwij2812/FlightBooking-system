@@ -47,10 +47,10 @@
                             </h3>
                         </div>
                 <br><br>
-                <form action="searchresultsmodified.php" method="POST">
+                <form action="add_flight_success.php" method="POST">
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                <input class="mdl-textfield__input" type="text" id="First Name" required>
-                                <label class="mdl-textfield__label" for="First Name">Flight No.</label>
+                                <input class="mdl-textfield__input" type="text" id="Flight_no" name="Flight_no" required>
+                                <label class="mdl-textfield__label" for="Flight_No">Flight No.</label>
                             </div>
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
     <select class="mdl-textfield__input" id="Source" name="Source" required>
@@ -75,20 +75,20 @@
     <label class="mdl-textfield__label" for="Destination">Destination</label>
   </div>
   <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                <input class="mdl-textfield__input" type="text" id="First Name" required>
-                                <label class="mdl-textfield__label" for="First Name">Departure</label>
+                                <input class="mdl-textfield__input" type="time" id="Departure"  name="Departure" required>
+                                <label class="mdl-textfield__label" for="Departure">Departure</label>
                             </div>
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" >
-                                <input class="mdl-textfield__input" type="text" id="First Name" required>
-                                <label class="mdl-textfield__label" for="First Name">Arrival</label>
+                                <input class="mdl-textfield__input" type="time" id="Arrival" name="Arrival" required >
+                                <label class="mdl-textfield__label" for="Arrival">Arrival</label>
                             </div>
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" >
-                                <input class="mdl-textfield__input" type="text" id="First Name" required>
-                                <label class="mdl-textfield__label" for="First Name">Fare</label>
+                                <input class="mdl-textfield__input" type="text" id="Fare" name="Fare" required>
+                                <label class="mdl-textfield__label" for="Fare">Fare</label>
                             </div>
                             <div class="mdl-shadow--16dp" style="background-color:#000000"><br>
                 <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-            <div class="mdl-typography--subtitle" style="color:black;font-weight:bolder" name="Search">Add a new flight</div>
+            <div class="mdl-typography--subtitle" style="color:black;font-weight:bolder" name="Add Flight">Add a new flight</div>
         </button><br><br></div>
         
             
