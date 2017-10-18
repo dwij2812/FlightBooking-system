@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Sign Up</title>
+    <title>Administrator </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="Front with CSS.css">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.teal-orange.min.css" />
@@ -46,32 +46,39 @@
                                 Flights
                             </h3>
                         </div>
-                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-                        <div class="mdl-typography--subtitle" style="color:black;font-weight:bolder" name="Search">Add Flight</div>
-                    </button>
-                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-                        <div class="mdl-typography--subtitle" style="color:black;font-weight:bolder" name="Search">Cancel Flight</div>
-                    </button>
-                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-                        <div class="mdl-typography--subtitle" style="color:black;font-weight:bolder" name="Search">Modify</div>
-                    </button>
+                        <div class="mdl-shadow--16dp" style="background-color:#f4b342"><br>
+                        <a class="mdl-navigation__link" href="add_flight.php"><div class="mdl-typography--title" style="color:#000000;font-size:15px"><b>ADD FLIGHT</b></div></a>
+                        <br>
+                        </div>
+                        <div class="mdl-shadow--16dp" style="background-color:#f4b342"><br>
+                        <a class="mdl-navigation__link" href="cancel_flight.php"><div class="mdl-typography--title" style="color:#000000;font-size:15px"><b>CANCEL FLIGHT</b></div></a>
+                        <br>
+                        </div>
+                        <div class="mdl-shadow--16dp" style="background-color:#f4b342"><br>
+                        <a class="mdl-navigation__link" href="home.php"><div class="mdl-typography--title" style="color:#000000;font-size:15px"><b>MODIFY FLIGHT</b></div></a>
+                        <br>
+                        </div>
                     <div class="mdl-shadow--16dp" style="background-color:#000000"><br>
                             <h3 style="color:white">
                                 Users
                             </h3>
                         </div>
-                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-                        <div class="mdl-typography--subtitle" style="color:black;font-weight:bolder" name="Search">View users</div>
-                    </button>
-                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-                        <div class="mdl-typography--subtitle" style="color:black;font-weight:bolder" name="Search">Modify User Details</div>
-                    </button>
-                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-                        <div class="mdl-typography--subtitle" style="color:black;font-weight:bolder" name="Search">Delete Users</div>
-                    </button>
+                        <div class="mdl-shadow--16dp" style="background-color:#f4b342"><br>
+                        <a class="mdl-navigation__link" href="home.php"><div class="mdl-typography--title" style="color:#000000;font-size:15px"><b>VIEW USERS</b></div></a>
+                        <br>
+                        </div>
+                        <div class="mdl-shadow--16dp" style="background-color:#f4b342"><br>
+                        <a class="mdl-navigation__link" href="home.php"><div class="mdl-typography--title" style="color:#000000;font-size:15px"><b>MODIFY USER DETAILS</b></div></a>
+                        <br>
+                        </div>
+                        <div class="mdl-shadow--16dp" style="background-color:#f4b342"><br>
+                        <a class="mdl-navigation__link" href="home.php"><div class="mdl-typography--title" style="color:#000000;font-size:15px"><b>DELETE USERS</b></div></a>
+                        <br>
+                        </div>
                     
             </div>
             </div></center>
+            <br><br><br>
         </div>
         </main>
     </body>

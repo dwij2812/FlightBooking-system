@@ -5,7 +5,7 @@ require 'db_conn.php';
 <html>
 
 <head>
-    <title>Sign Up</title>
+    <title>Users</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="Front with CSS.css">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.teal-orange.min.css" />
@@ -19,7 +19,7 @@ require 'db_conn.php';
         <header class="mdl-layout__header">
             <div class="mdl-layout__header-row">
                 <!-- Title -->
-                <span class="mdl-layout-title">Add a new Flight</span>
+                <span class="mdl-layout-title">User Details</span>
                 <!-- Add spacer, to align navigation to the right -->
                 <div class="mdl-layout-spacer"></div>
                 <!-- Navigation. We hide it in small screens. -->
@@ -33,7 +33,7 @@ require 'db_conn.php';
             </div>
         </header>
         <div class="mdl-layout__drawer">
-            <span class="mdl-layout-title">Add a new flight</span>
+            <span class="mdl-layout-title">User Details</span>
             <nav class="mdl-navigation">
                 <a class="mdl-navigation__link" href="home.php">Home</a>
                 <a class="mdl-navigation__link" href="">About</a>
@@ -50,37 +50,31 @@ require 'db_conn.php';
         <div class="mdl-card mdl-shadow--16dp" style="width:800px">
         <div class="mdl-shadow--16dp" style="background-color:#000000">
                         <br>
-                        <div class="mdl-typography--title" style="color:#ffffff">Search Results</div>
+                        <div class="mdl-typography--title" style="color:#ffffff">User Details</div>
                         <br>
                         </div>
         <br><br>
         <table class="mdl-data-table mdl-js-data-table mdl-shadow--8dp">
   <thead>
     <tr>
-      <th>Flight No.</th>
-      <th>Origin</th>
-      <th>Destination</th>
-      <th>Departure</th>
-      <th>Arrival</th>
-      <th>Fare</th>
-      <th>Select Flight</th>
+      <th>User Id</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Select User</th>
     </tr>
   </thead>
   <tbody>
-        <form action='cancel_flight_success.php'>
+        <form action="user_details.php" methos="POST">
             <?php
-                $sql = "SELECT * from flight";
+                $sql = "SELECT * from customerlogin";
                 $result = mysqli_query($conn,$sql);
 	            while($row=mysqli_fetch_assoc($result)){
                     echo "<tr>";
-                    echo "<td><b>" . $row['F_no'] . "</b></td>";
-                    echo "<td>" . $row['Origin'] . "</td>";
-                    echo "<td>" . $row['Destination'] . "</td>";
-                    echo "<td>" . $row['Dep'] . "</td>";
-                    echo "<td>" . $row['Arr'] . "</td>";
-                    echo "<td>" . $row['Fare'] . "</td>";
-                    echo "<td><label class=\"mdl-radio mdl-js-radio mdl-js-ripple-effect\" for=\"".$row['F_no']."\">
-                    <input type=\"radio\" id=\"".$row['F_no']."\" class=\"mdl-radio__button\" name=\"cancel_flight\" value=\"".$row['F_no']."\">
+                    echo "<td><b>" . $row['Customer_id'] . "</b></td>";
+                    echo "<td>" . $row['First_name'] . "</td>";
+                    echo "<td>" . $row['Last_name'] . "</td>";
+                    echo "<td><label class=\"mdl-radio mdl-js-radio mdl-js-ripple-effect\" for=\"".$row['Customer_id']."\">
+                    <input type=\"radio\" id=\"".$row['Customer_id']."\" class=\"mdl-radio__button\" name=\"idc\" value=\"".$row['Customer_id']."\">
                     </label></td>";
                     echo "</tr>";
                 }
@@ -90,7 +84,7 @@ require 'db_conn.php';
 <br><br>
 <div class="mdl-shadow--16dp" style="background-color:#212121"><br>
                             <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-                        <div class="mdl-typography--subtitle" style="color:black;font-weight:bolder" name="Cancel">Cancel Flight</div>
+                        <div class="mdl-typography--subtitle" style="color:black;font-weight:bolder" name="Detail">View Complete Details</div>
                     </button>
                     <br><br>
                     </div>
