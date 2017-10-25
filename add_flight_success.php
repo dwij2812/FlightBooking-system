@@ -7,8 +7,8 @@ $Departure = $_POST['Departure'];
 $Arrival = $_POST['Arrival'];
 $Fare = $_POST['Fare'];
 
-if (isset($_POST['Add Flight'])){
-    $sql="INSERT INTO flight VALUES(DEFAULT,'".$Flight_no."','".$Source."','".$Destination."','".$Departure."','".$Arrival."','".$Fare."')";
+if (isset($_POST['Add_Flight'])){
+    $sql="INSERT INTO flight VALUES('".$Flight_no."','".$Source."','".$Destination."','".$Departure."','".$Arrival."','".$Fare."')";
     $result=mysqli_query($conn,$sql);
     if(!$result)
     {
@@ -16,7 +16,7 @@ if (isset($_POST['Add Flight'])){
     }
     else
     {
-        echo '<script type="text/javascript">alert("Flight Successfully added");(window.location = "home.php");</script>';	
+        echo '<script type="text/javascript">alert("Flight Successfully added");(window.location = "logged_admin.php");</script>';	
     }
 }
 ?>

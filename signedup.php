@@ -2,7 +2,7 @@
 	require 'db_conn.php';
     $first_name = $_POST['First-Name'];
     $last_name = $_POST['Last-Name'];
-    $email = $POST['Email'];
+    $email = $_POST['Email'];
     $dob = $_POST['DOB'];
     $gender = $_POST['options'];
     $nationality  = $_POST['Nationality'];

@@ -1,7 +1,7 @@
 <?php
 	require 'db_conn.php';
-	$id = $_POST['idc'];
-	if (isset($_POST['Detail']))
+    $id = $_POST['idc'];
+    if (isset($_POST['Detail']))
 ?>
 <html>
 <head>
@@ -53,7 +53,7 @@
 
 					
 	<?php
-	$sql="SELECT * FROM customerlogin where Customer_id='".$id."'";
+	$sql="SELECT * FROM customerlogin where email_id='".$id."'";
 	$result=mysqli_query($conn,$sql);
 	$count=mysqli_num_rows($result);
 		$row=mysqli_fetch_assoc($result);

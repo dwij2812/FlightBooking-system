@@ -67,7 +67,7 @@ require 'db_conn.php';
     </tr>
   </thead>
   <tbody>
-        <form action='cancel_flight_success.php'>
+        <form action='cancel_flight_success.php' method="POST">
             <?php
                 $sql = "SELECT * from flight";
                 $result = mysqli_query($conn,$sql);
@@ -89,8 +89,8 @@ require 'db_conn.php';
 </table>
 <br><br>
 <div class="mdl-shadow--16dp" style="background-color:#212121"><br>
-                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-                        <div class="mdl-typography--subtitle" style="color:black;font-weight:bolder" name="Cancel">Cancel Flight</div>
+<input type="Submit" name="cancel" value="Cancel the selected Flight" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                
                     </button>
                     <br><br>
                     </div>

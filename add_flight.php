@@ -87,8 +87,8 @@
                                 <label class="mdl-textfield__label" for="Fare">Fare</label>
                             </div>
                             <div class="mdl-shadow--16dp" style="background-color:#000000"><br>
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-            <div class="mdl-typography--subtitle" style="color:black;font-weight:bolder" name="Add Flight">Add a new flight</div>
+                            <input type="Submit" name="Add_Flight" value="Add a new flight" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                
         </button><br><br></div>
         
             

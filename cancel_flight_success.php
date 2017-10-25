@@ -2,7 +2,7 @@
 require 'db_conn.php';
 $Flight_No = $_POST['cancel_flight'];
 if (isset($_POST['cancel'])){
-    $sql="DELETE * FROM  flight WHERE F_no='".$Flight_No."'";
+    $sql="DELETE FROM  flight WHERE F_no='".$Flight_No."'";
     $result=mysqli_query($conn,$sql);
     if(!$result)
     {

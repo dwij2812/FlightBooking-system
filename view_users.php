@@ -74,7 +74,7 @@ require 'db_conn.php';
                     echo "<td>" . $row['First_name'] . "</td>";
                     echo "<td>" . $row['Last_name'] . "</td>";
                     echo "<td><label class=\"mdl-radio mdl-js-radio mdl-js-ripple-effect\" for=\"".$row['Customer_id']."\">
-                    <input type=\"radio\" id=\"".$row['Customer_id']."\" class=\"mdl-radio__button\" name=\"idc\" value=\"".$row['Customer_id']."\">
+                    <input type=\"radio\" id=\"".$row['Customer_id']."\" class=\"mdl-radio__button\" name=\"idc\" value=\"".$row['email_id']."\">
                     </label></td>";
                     echo "</tr>";
                 }
