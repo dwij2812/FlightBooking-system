@@ -61,7 +61,7 @@ session_start();
                         <br>
                         </div>
                         <hr>
-                        <form action="searchresultsmodified.php" method="POST" id="home">
+                        <form action="searchresultsmodified.php" method="POST" id="search">
                             <br>
                             <div>
                             <div class="mdl-typography--subtitle" for="Source">Journey Date:</div>
@@ -81,7 +81,7 @@ session_start();
                             <br>
 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
     <select class="mdl-textfield__input" id="Source" name="Source" required>
-      <option></option>
+      <option value=000><i>Origin City</i></option>
       <option value="Delhi">Delhi</option>
       <option value="Mumbai">Mumbai</option>
       <option value="Chennai">Chennai</option>
@@ -92,7 +92,7 @@ session_start();
 </div>
 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
     <select class="mdl-textfield__input" id="Destination" name="Destination" required>
-      <option></option>
+      <option value=000><i>Lets Discover Places</i></option>
       <option value="Delhi">Delhi</option>
       <option value="Mumbai">Mumbai</option>
       <option value="Chennai">Chennai</option>
@@ -113,27 +113,9 @@ session_start();
                     </div>
                     </form>
 <script  type="text/javascript">
- var frmvalidator = new Validator("home");
- frmvalidator.addValidation("First-Name","req","Please enter your First Name");
- frmvalidator.addValidation("First-Name","maxlen=20","Max length for First Name is 20");
- 
- frmvalidator.addValidation("Last-Name","req","Please enter your Last Name");
- frmvalidator.addValidation("Last-Name","maxlen=20");
- 
- frmvalidator.addValidation("Email","maxlen=50");
- frmvalidator.addValidation("Email","req");
- frmvalidator.addValidation("Email","email");
- 
- frmvalidator.addValidation("Mobile-No","maxlen=10","Please Enter a valid phone number");
- frmvalidator.addValidation("Mobile-No","req","Entering your mobile no is compulsory");
- frmvalidator.addValidation("Mobile-No","numeric","Please Enter a valid phone number");
- 
- frmvalidator.addValidation("Address","maxlen=50");
-
- frmvalidator.addValidation("r_password","req","Please confirm the password you want to set!");
- frmvalidator.addValidation("Password","req","Please Provide us with a Password to secure your account");
-
- frmvalidator.addValidation("r_password","eqelmnt=Password","The Re-entered password is not same as the password");
+ var frmvalidator = new Validator("search");
+ frmvalidator.addValidation("Source","dontselect=000","Please enter the Departure City");
+ frmvalidator.addValidation("Destination","dontselect=000","Please enter the arrival city");
 </script>
                 </center>
                 

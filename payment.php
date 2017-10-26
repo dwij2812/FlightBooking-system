@@ -1,5 +1,8 @@
 <?php
 session_start();
+if(!isset($_SESSION["Customer_id"])){
+    echo '<script type="text/javascript">alert("Please Login First and then procceed.");window.location= "home.php";</script>';
+}
 ?>
 <html>
 <head>

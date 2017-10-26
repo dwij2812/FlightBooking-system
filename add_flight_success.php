@@ -16,7 +16,7 @@ if (isset($_POST['Add_Flight'])){
     }
     else
     {
-        echo '<script type="text/javascript">alert("Flight Successfully added");(window.location = "logged_admin.php");</script>';	
+        echo '<script type="text/javascript">alert("Flight Successfully added");(window.location = "admin.php");</script>';	
     }
 }
 ?>
