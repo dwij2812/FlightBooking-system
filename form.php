@@ -77,7 +77,7 @@
                         <div class="mdl-typography--title" style="color:#ffffff">Date Of Birth</div>
                         <br>
                         </div><br><br>
-                        <input type="date" id="DOB" name="DOB" required><br>
+                        <input type="date" id="DOB" onchange="checkDate()" name="DOB" required><br>
                         <br>
                         <br>
 

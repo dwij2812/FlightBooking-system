@@ -1,10 +1,10 @@
 <?php
 session_start();
 require 'db_conn.php';
-$journey_date = $_POST['journey_date'];
-$return_date = $_POST['return_date'];
-$Source = $_POST['Source'];
-$Destination = $_POST['Destination'];
+$journey_date = $_SESSION["jd"];
+$return_date = $_SESSION["rd"];
+$Source = $_SESSION["Source"];
+$Destination = $_SESSION["Destination"];
 
 if (isset($_POST['Search']))
 ?>
@@ -69,9 +69,9 @@ if (isset($_POST['Search']))
     </tr>
   </thead>
   <tbody>
-        <form action='flight_selected.php'>
+        <form action='payment.php'>
             <?php
-                $sql = "SELECT * from flight where Origin='".$Source."' and Destination='".$Destination."'";
+                $sql = "SELECT * from flight where Origin='".$Destination."' and Destination='".$Source."'";
                 $result = mysqli_query($conn,$sql);
 	            while($row=mysqli_fetch_assoc($result)){
                     echo "<tr>";
@@ -84,11 +84,7 @@ if (isset($_POST['Search']))
                     echo "<td><label class=\"mdl-radio mdl-js-radio mdl-js-ripple-effect\" for=\"".$row['F_no']."\">
                     <input type=\"radio\" id=\"".$row['F_no']."\" class=\"mdl-radio__button\" name=\"options\" value=\"".$row['F_no']."\">
                     </label></td>";
-                    $_SESSION["dep"]=$row['F_no'];
-                    $_SESSION["jd"]=$journey_date;
-                    $_SESSION["rd"]=$return_date;
-                    $_SESSION["Source"]=$Source;
-                    $_SESSION["Destination"]=$Destination;
+                    $_SESSION["arr"]=$row['F_no'];
                     echo "</tr>";
                 }
 	        ?>

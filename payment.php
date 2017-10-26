@@ -1,9 +1,5 @@
 <?php
-	require 'db_conn.php';
-    $login = $_POST['Loginid'];
-    session_start();
-	$pass = $_POST['Password'];
-	if (isset($_POST['Login']))
+session_start();
 ?>
 <html>
 <head>
@@ -11,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.teal-orange.min.css" />
     <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+    <script src="gen_validatorv4.js" type="text/javascript"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
@@ -44,49 +41,28 @@
         </div>
         <main class="mdl-layout__content">
             <div class="page-content">
-			<br><br>
-			<center>
+            <br><br>
+                <center>
                     <div class="demo-card-wide mdl-card mdl-shadow--16dp">
                         <div class="mdl-shadow--16dp" style="background-color:#000000">
                         <br>
-                        <div class="mdl-typography--title" style="color:#ffffff">Account Details:</div>
+                        <div class="mdl-typography--title" style="color:#ffffff">Review Before Payment:</div>
                         <br>
                         </div>
+                        <?php
+                        echo $_SESSION["Customer_id"];
+                        echo $_SESSION["jd"];
+                        echo $_SESSION["rd"];
+                        echo $_SESSION["Source"];
+                        echo $_SESSION["Destination"];
+                        echo $_SESSION["dep"];
+                        echo $_SESSION["arr"];
+                        ?>
+                    </div>
+                </center>
 
-					
-	<?php
-	$sql="SELECT * FROM customerlogin where email_id='".$login."' and password='".$pass."'";
-	$result=mysqli_query($conn,$sql);
-	$count=mysqli_num_rows($result);
-	if($count==1)
-	{
-		echo '<script type="text/javascript">alert("You have successfully Logged in")</script>';
-		$row=mysqli_fetch_assoc($result);
-		echo '<br><br><div class=\"mdl-typography--subtitle\">Customer ID: '.$row['Customer_id'].'<br>First name: '.$row['First_name'].'<br>Last name: '.$row['Last_name'].'<br>Mobile Number: '.$row['Mobile_no'].'</div>';
-        $_SESSION["Customer_id"] =$row['Customer_id'];		
-    }
-   else
-    {   
-		echo '<script type="text/javascript">alert("Invalid Email-Id or Password");history.go(-1);</script>';
-	}
-	
-	?>
-	<br>
-	<br>
-	<div class="mdl-shadow--16dp" style="background-color:#000000"><br>
-    <div class="mdl-shadow--16dp" style="background-color:#f4b342"><br>
-                        <a class="mdl-navigation__link" href="home.php"><div class="mdl-typography--title" style="color:#000000;font-size:15px"><b>Book Now</b></div></a>
-                        <br>
-                        </div>
-                        <br><br>
-	<form action="home.php">
-<input type="submit" value="Log Out" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-</form>
-	
-	<br>
-	</div>
-					</center>
-	</div>
-	</main>
-</body>
-</html>
+
+            </div>
+        </main>
+        </body>
+        </html>

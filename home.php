@@ -1,9 +1,13 @@
+<?php
+session_start();
+?>
 <html>
 <head>
     <link rel="stylesheet" href="Front with CSS.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.teal-orange.min.css" />
     <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+    <script src="gen_validatorv4.js" type="text/javascript"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
@@ -57,7 +61,7 @@
                         <br>
                         </div>
                         <hr>
-                        <form action="searchresultsmodified.php" method="POST">
+                        <form action="searchresultsmodified.php" method="POST" id="home">
                             <br>
                             <div>
                             <div class="mdl-typography--subtitle" for="Source">Journey Date:</div>
@@ -108,6 +112,29 @@
                     </div>
                     </div>
                     </form>
+<script  type="text/javascript">
+ var frmvalidator = new Validator("home");
+ frmvalidator.addValidation("First-Name","req","Please enter your First Name");
+ frmvalidator.addValidation("First-Name","maxlen=20","Max length for First Name is 20");
+ 
+ frmvalidator.addValidation("Last-Name","req","Please enter your Last Name");
+ frmvalidator.addValidation("Last-Name","maxlen=20");
+ 
+ frmvalidator.addValidation("Email","maxlen=50");
+ frmvalidator.addValidation("Email","req");
+ frmvalidator.addValidation("Email","email");
+ 
+ frmvalidator.addValidation("Mobile-No","maxlen=10","Please Enter a valid phone number");
+ frmvalidator.addValidation("Mobile-No","req","Entering your mobile no is compulsory");
+ frmvalidator.addValidation("Mobile-No","numeric","Please Enter a valid phone number");
+ 
+ frmvalidator.addValidation("Address","maxlen=50");
+
+ frmvalidator.addValidation("r_password","req","Please confirm the password you want to set!");
+ frmvalidator.addValidation("Password","req","Please Provide us with a Password to secure your account");
+
+ frmvalidator.addValidation("r_password","eqelmnt=Password","The Re-entered password is not same as the password");
+</script>
                 </center>
                 
         </main>
