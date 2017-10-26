@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="Front with CSS.css">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.teal-orange.min.css" />
     <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+    <script src="gen_validatorv4.js" type="text/javascript"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
@@ -43,7 +44,7 @@
                 <!-- Your content goes here -->
 
                 <center>
-                    <form action="signedup.php" method="POST">
+                    <form action="signedup.php" method="POST" id="signin">
 <br><br>
                         <div class="demo-card-wide mdl-card mdl-shadow--16dp">
                             <b> <div class="mdl-shadow--16dp" style="background-color:#000000">
@@ -76,7 +77,7 @@
                         <div class="mdl-typography--title" style="color:#ffffff">Date Of Birth</div>
                         <br>
                         </div><br><br>
-                        <input type="date" id="DOB" name="DOB"><br>
+                        <input type="date" id="DOB" name="DOB" required><br>
                         <br>
                         <br>
 
@@ -88,7 +89,7 @@
                         <br>
                         <div>
                             <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
-                <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="Male">
+                <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="Male" required>
                 <span class="mdl-radio__label">Male</span>
         </label>
                             <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
@@ -104,7 +105,7 @@
                         <br>
                         </div><br><br>
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" type="text" id="Nationality" name="Nationality">
+                    <input class="mdl-textfield__input" type="text" id="Nationality" name="Nationality" required>
                     <label class="mdl-textfield__label" for="Nationality">Nationality</label>
                 </div>
                 <center>
@@ -115,7 +116,7 @@
                         </div><br>
                     <span class="mdl-radio__label">Student</span>
                     <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="Student">
-                <input type="radio" id="Student" class="mdl-radio__button" name="occupation" value="Student">
+                <input type="radio" id="Student" class="mdl-radio__button" name="occupation" value="Student" required>
                 
         </label><br>
                 <span class="mdl-radio__label">Teacher</span>
@@ -148,17 +149,17 @@
                         <br>
                         </div></b><br><br><br>
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" type="text" id="Address" name="Address">
+                    <input class="mdl-textfield__input" type="text" id="Address" name="Address" required>
                     <label class="mdl-textfield__label" for="Address">Address</label>
                 </div>
                
                 <br>
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" type="text" id="City" name="City">
+                    <input class="mdl-textfield__input" type="text" id="City" name="City" required>
                     <label class="mdl-textfield__label" for="City">City</label>
                 </div>
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" type="text" id="State" name="State">
+                    <input class="mdl-textfield__input" type="text" id="State" name="State" required>
                     <label class="mdl-textfield__label" for="State">State</label>
                 </div>
                 <br>
@@ -199,6 +200,30 @@
             </div>
     </div>
     </Form>
+    <script  type="text/javascript">
+ var frmvalidator = new Validator("signin");
+ frmvalidator.addValidation("First-Name","req","Please enter your First Name");
+ frmvalidator.addValidation("First-Name","maxlen=20","Max length for First Name is 20");
+ 
+ frmvalidator.addValidation("Last-Name","req","Please enter your Last Name");
+ frmvalidator.addValidation("Last-Name","maxlen=20");
+ 
+ frmvalidator.addValidation("Email","maxlen=50");
+ frmvalidator.addValidation("Email","req");
+ frmvalidator.addValidation("Email","email");
+ 
+ frmvalidator.addValidation("Mobile-No","maxlen=10","Please Enter a valid phone number");
+ frmvalidator.addValidation("Mobile-No","req","Entering your mobile no is compulsory");
+ frmvalidator.addValidation("Mobile-No","numeric","Please Enter a valid phone number");
+ 
+ frmvalidator.addValidation("Address","maxlen=50");
+
+ frmvalidator.addValidation("r_password","req","Please confirm the password you want to set!");
+ frmvalidator.addValidation("Password","req","Please Provide us with a Password to secure your account");
+
+ frmvalidator.addValidation("r_password","eqelmnt=Password","The Re-entered password is not same as the password");
+
+</script>
     </Center>
 
     </div>
