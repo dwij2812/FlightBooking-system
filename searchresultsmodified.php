@@ -89,6 +89,7 @@ if (isset($_POST['Search']))
                     $_SESSION["rd"]=$return_date;
                     $_SESSION["Source"]=$Source;
                     $_SESSION["Destination"]=$Destination;
+                    $_SESSION["Fare1"]=$row['Fare'];
                     echo "</tr>";
                 }
 	        ?>

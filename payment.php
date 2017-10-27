@@ -1,5 +1,6 @@
 <?php
 session_start();
+require 'db_conn.php';
 if(!isset($_SESSION["Customer_id"])){
     echo '<script type="text/javascript">alert("Please Login First and then procceed.");window.location= "home.php";</script>';
 }
@@ -53,15 +54,32 @@ if(!isset($_SESSION["Customer_id"])){
                         <br>
                         </div>
                         <?php
-                        echo $_SESSION["Customer_id"];
-                        echo $_SESSION["jd"];
-                        echo $_SESSION["rd"];
-                        echo $_SESSION["Source"];
-                        echo $_SESSION["Destination"];
-                        echo $_SESSION["dep"];
-                        echo $_SESSION["arr"];
+                        $sql="SELECT * FROM customerlogin where Customer_id='".$_SESSION["Customer_id"]."'";
+                        $result=mysqli_query($conn,$sql);
+                        $row=mysqli_fetch_assoc($result);
+                        echo '<br><br><div class=\"mdl-typography--subtitle\">Customer ID: '.$row['Customer_id'].'<br>First name: '.$row['First_name'].'<br>Last name: '.$row['Last_name'].'<br>Mobile Number: '.$row['Mobile_no'].'<br><br></div>';
+                        ?>
+                        <div class="mdl-shadow--16dp" style="background-color:#000000">
+                        <br>
+                        <div class="mdl-typography--title" style="color:#ffffff">Selected Flight:</div>
+                        <br>
+                        </div>
+                        <?php
+                        echo '<br><br><div class=\"mdl-typography--subtitle\">From: '.$_SESSION["Source"].'        To: '.$_SESSION["Destination"].'<br>Flight No: '.$_SESSION["dep"].'  on  '.$_SESSION["jd"].'<br><br></div>';
+                        echo '<br><br><div class=\"mdl-typography--subtitle\">From: '.$_SESSION["Destination"].'        To: '.$_SESSION["Source"].'<br>Flight No: '.$_SESSION["arr"].'  on  '.$_SESSION["rd"].'<br><br></div>';
+                        ?>
+                        <br><br>
+                        <div class="mdl-shadow--16dp" style="background-color:#000000">
+                        <br>
+                        <div class="mdl-typography--title" style="color:#ffffff">Total Fare:</div>
+                        <br>
+                        </div><br><br>
+                        <?php
+                        $_SESSION["total"]=int($_SESSION["Fare2"])+int($_SESSION["Fare1"]);
+                        echo $_SESSION["Total"];
                         ?>
                     </div>
+
                 </center>
 
 

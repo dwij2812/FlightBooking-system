@@ -85,6 +85,7 @@ if (isset($_POST['Search']))
                     <input type=\"radio\" id=\"".$row['F_no']."\" class=\"mdl-radio__button\" name=\"options\" value=\"".$row['F_no']."\">
                     </label></td>";
                     $_SESSION["arr"]=$row['F_no'];
+                    $_SESSION["Fare2"]=$row['Fare'];
                     echo "</tr>";
                 }
 	        ?>
