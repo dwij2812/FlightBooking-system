@@ -75,13 +75,23 @@ if(!isset($_SESSION["Customer_id"])){
                         <br>
                         </div><br><br>
                         <?php
-                        $_SESSION["total"]=int($_SESSION["Fare2"])+int($_SESSION["Fare1"]);
-                        echo $_SESSION["Total"];
+                        $_SESSION["total"]=intval($_SESSION["Fare2"])+intval($_SESSION["Fare1"]);
                         ?>
+                        <b>
+                        <?php
+                        echo $_SESSION["total"];
+                        ?>
+                        </b>
+                        <br>
+                        <div class="mdl-shadow--16dp" style="background-color:#000000"><br>
+                        <form action="bookticket.php">
+                            <input type="submit" value="Confirm and Procceed" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                        </form>
+	                    </div>  
                     </div>
 
                 </center>
-
+                <br><br>
 
             </div>
         </main>
