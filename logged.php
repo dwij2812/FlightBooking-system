@@ -79,6 +79,14 @@
                         <a class="mdl-navigation__link" href="home.php"><div class="mdl-typography--title" style="color:#000000;font-size:15px"><b>Book Now</b></div></a>
                         <br>
                         </div>
+                        <div class="mdl-shadow--16dp" style="background-color:#f4b342"><br>
+                        <a class="mdl-navigation__link" href="user_flight_view.php"><div class="mdl-typography--title" style="color:#000000;font-size:15px"><b>View Previous Bookings</b></div></a>
+                        <br>
+                        </div>
+                        <div class="mdl-shadow--16dp" style="background-color:#f4b342"><br>
+                        <a class="mdl-navigation__link" href="user_cancel.php"><div class="mdl-typography--title" style="color:#000000;font-size:15px"><b>Cancel Flights</b></div></a>
+                        <br>
+                        </div>
                         <br><br>
 	<form action="home.php">
 <input type="submit" value="Log Out" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">

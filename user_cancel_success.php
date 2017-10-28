@@ -1,25 +1,16 @@
 <?php
 require 'db_conn.php';
-session_start();
-$Flight_no1= $_SESSION["dep"];
-$Flight_no2= $_SESSION["arr"];
-$Source = $_SESSION["Source"];
-$Destination = $_SESSION["Destination"];
-$Fare1= $_SESSION["Fare1"];
-$Fare2= $_SESSION["Fare2"];
-
-if (isset($_POST['pay'])){
-    $sql1="INSERT INTO booking VALUES(DEFAULT,'".$Flight_no1."','".$Source."','".$Destination."','".$_SESSION["Customer_id"]."','".$_SESSION["jd"]."','".$Fare1."')";
-    $sql2="INSERT INTO booking VALUES(DEFAULT,'".$Flight_no2."','".$Destination."','".$Source."','".$_SESSION["Customer_id"]."','".$_SESSION["rd"]."','".$Fare2."')";
-    $result1=mysqli_query($conn,$sql1);
-    $result2=mysqli_query($conn,$sql2);
-    if(!$result1 OR !$result2)
+$Flight_No = $_POST['cancel_flight'];
+if (isset($_POST['cancel'])){
+    $sql="DELETE FROM  booking WHERE TicketID='".$Flight_No."'";
+    $result=mysqli_query($conn,$sql);
+    if(!$result)
     {
         echo '<script type="text/javascript">alert("'.mysqli_error($conn).'");history.go(-1);</script>';
     }
     else
     {
-        echo '<script type="text/javascript">alert("Your Tickes Have been booked!");</script>';	
+        echo '<script type="text/javascript">alert("Flight Successfully Cancelled and Your Money will be sent to your account in 24 Hours");</script>';	
     }
 }
 ?>
@@ -73,11 +64,11 @@ if (isset($_POST['pay'])){
         <br><br><br>
         <Img Src="confirm.png" align="center" height="25%" ALT="confirmation tick">
         <br><br><br>
-        <div class="mdl-typography--title">Your Flight has been booked </div>
+        <div class="mdl-typography--title">Flight Has been Cancelled</div>
         <br><br>
         <div class="mdl-shadow--16dp" style="background-color:#212121"><br>
 <div class="mdl-shadow--16dp" style="background-color:#f4b342"><br>
-                        <a class="mdl-navigation__link" href="home.php"><div class="mdl-typography--title" style="color:#000000;font-size:15px"><b>Home</b></div></a>
+                        <a class="mdl-navigation__link" href="home.php"><div class="mdl-typography--title" style="color:#000000;font-size:15px"><b>Book Another</b></div></a>
                         <br>
                         </div>
                 
