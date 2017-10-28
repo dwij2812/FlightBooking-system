@@ -6,6 +6,7 @@
 	if (isset($_POST['Login']))
 ?>
 <html>
+<Title>Your Account</title>
 <head>
     <link rel="stylesheet" href="Front with CSS.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,7 +20,7 @@
         <header class="mdl-layout__header">
             <div class="mdl-layout__header-row">
                 <!-- Title -->
-                <span class="mdl-layout-title">Home</span>
+                <span class="mdl-layout-title">Your Account</span>
                 <!-- Add spacer, to align navigation to the right -->
                 <div class="mdl-layout-spacer"></div>
                 <!-- Navigation. We hide it in small screens. -->
@@ -33,7 +34,7 @@
             </div>
         </header>
         <div class="mdl-layout__drawer">
-            <span class="mdl-layout-title">Home</span>
+            <span class="mdl-layout-title">Your Account</span>
             <nav class="mdl-navigation">
                 <a class="mdl-navigation__link" href="home.php">Home</a>
                 <a class="mdl-navigation__link" href="form.php">Signup</a>

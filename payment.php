@@ -7,6 +7,7 @@ if(!isset($_SESSION["Customer_id"])){
 ?>
 <html>
 <head>
+<title>Payment</title>
     <link rel="stylesheet" href="Front with CSS.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.teal-orange.min.css" />
@@ -20,7 +21,7 @@ if(!isset($_SESSION["Customer_id"])){
         <header class="mdl-layout__header">
             <div class="mdl-layout__header-row">
                 <!-- Title -->
-                <span class="mdl-layout-title">Home</span>
+                <span class="mdl-layout-title">Payment</span>
                 <!-- Add spacer, to align navigation to the right -->
                 <div class="mdl-layout-spacer"></div>
                 <!-- Navigation. We hide it in small screens. -->
@@ -34,7 +35,7 @@ if(!isset($_SESSION["Customer_id"])){
             </div>
         </header>
         <div class="mdl-layout__drawer">
-            <span class="mdl-layout-title">Home</span>
+            <span class="mdl-layout-title">Payment</span>
             <nav class="mdl-navigation">
                 <a class="mdl-navigation__link" href="home.php">Home</a>
                 <a class="mdl-navigation__link" href="form.php">Signup</a>
@@ -65,8 +66,8 @@ if(!isset($_SESSION["Customer_id"])){
                         <br>
                         </div>
                         <?php
-                        echo '<br><br><div class=\"mdl-typography--subtitle\">From: '.$_SESSION["Source"].'        To: '.$_SESSION["Destination"].'<br>Flight No: '.$_SESSION["dep"].'  on  '.$_SESSION["jd"].'<br><br></div>';
-                        echo '<br><br><div class=\"mdl-typography--subtitle\">From: '.$_SESSION["Destination"].'        To: '.$_SESSION["Source"].'<br>Flight No: '.$_SESSION["arr"].'  on  '.$_SESSION["rd"].'<br><br></div>';
+                        echo '<br><br><div class=\"mdl-typography--subtitle\"><b><i>From: </i></b>'.$_SESSION["Source"].'       <b><i> To:</i></b> '.$_SESSION["Destination"].'<br><b>Flight No:</b> '.$_SESSION["dep"].'  <b>on</b>  '.$_SESSION["jd"].'<br><br></div>';
+                        echo '<br><br><div class=\"mdl-typography--subtitle\"><b><i>From: </i></b>'.$_SESSION["Destination"].'        <b><i>To:</i></b> '.$_SESSION["Source"].'<br><b>Flight No:</b> '.$_SESSION["arr"].'  <b>on</b>  '.$_SESSION["rd"].'<br><br></div>';
                         ?>
                         <br><br>
                         <div class="mdl-shadow--16dp" style="background-color:#000000">
@@ -77,7 +78,7 @@ if(!isset($_SESSION["Customer_id"])){
                         <?php
                         $_SESSION["total"]=intval($_SESSION["Fare2"])+intval($_SESSION["Fare1"]);
                         ?>
-                        <b>
+                        <b>&#8377
                         <?php
                         echo $_SESSION["total"];
                         ?>

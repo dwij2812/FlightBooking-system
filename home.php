@@ -2,6 +2,7 @@
 session_start();
 ?>
 <html>
+<Title>Homepage</title>
 <head>
     <link rel="stylesheet" href="Front with CSS.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">

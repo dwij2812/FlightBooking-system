@@ -54,10 +54,6 @@
                         <a class="mdl-navigation__link" href="cancel_flight.php"><div class="mdl-typography--title" style="color:#000000;font-size:15px"><b>CANCEL FLIGHT</b></div></a>
                         <br>
                         </div>
-                        <div class="mdl-shadow--16dp" style="background-color:#f4b342"><br>
-                        <a class="mdl-navigation__link" href="home.php"><div class="mdl-typography--title" style="color:#000000;font-size:15px"><b>MODIFY FLIGHT</b></div></a>
-                        <br>
-                        </div>
                     <div class="mdl-shadow--16dp" style="background-color:#000000"><br>
                             <h3 style="color:white">
                                 Users
@@ -65,10 +61,6 @@
                         </div>
                         <div class="mdl-shadow--16dp" style="background-color:#f4b342"><br>
                         <a class="mdl-navigation__link" href="home.php"><div class="mdl-typography--title" style="color:#000000;font-size:15px"><b>VIEW USERS</b></div></a>
-                        <br>
-                        </div>
-                        <div class="mdl-shadow--16dp" style="background-color:#f4b342"><br>
-                        <a class="mdl-navigation__link" href="home.php"><div class="mdl-typography--title" style="color:#000000;font-size:15px"><b>MODIFY USER DETAILS</b></div></a>
                         <br>
                         </div>
                         <div class="mdl-shadow--16dp" style="background-color:#f4b342"><br>

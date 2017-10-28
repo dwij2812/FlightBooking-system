@@ -9,6 +9,7 @@ $Destination = $_SESSION["Destination"];
 if (isset($_POST['Search']))
 ?>
 <html>
+<title>Choose Return Flight</title>
 <head>
     <link rel="stylesheet" href="Front with CSS.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,7 +23,7 @@ if (isset($_POST['Search']))
         <header class="mdl-layout__header">
             <div class="mdl-layout__header-row">
                 <!-- Title -->
-                <span class="mdl-layout-title">Search Results</span>
+                <span class="mdl-layout-title">Choose Return Flight</span>
                 <!-- Add spacer, to align navigation to the right -->
                 <div class="mdl-layout-spacer"></div>
                 <!-- Navigation. We hide it in small screens. -->
@@ -36,7 +37,7 @@ if (isset($_POST['Search']))
             </div>
         </header>
         <div class="mdl-layout__drawer">
-            <span class="mdl-layout-title">Search Results</span>
+            <span class="mdl-layout-title">Choose Return Flight</span>
             <nav class="mdl-navigation">
                 <a class="mdl-navigation__link" href="home.php">Home</a>
                 <a class="mdl-navigation__link" href="form.php">Signup</a>

@@ -5,7 +5,7 @@ require 'db_conn.php';
 <html>
 
 <head>
-    <title>Sign Up</title>
+    <title>Cancel Flight</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="Front with CSS.css">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.teal-orange.min.css" />
@@ -19,7 +19,7 @@ require 'db_conn.php';
         <header class="mdl-layout__header">
             <div class="mdl-layout__header-row">
                 <!-- Title -->
-                <span class="mdl-layout-title">Add a new Flight</span>
+                <span class="mdl-layout-title">Cancel a Flight</span>
                 <!-- Add spacer, to align navigation to the right -->
                 <div class="mdl-layout-spacer"></div>
                 <!-- Navigation. We hide it in small screens. -->
@@ -33,7 +33,7 @@ require 'db_conn.php';
             </div>
         </header>
         <div class="mdl-layout__drawer">
-            <span class="mdl-layout-title">Add a new flight</span>
+            <span class="mdl-layout-title">Cancel a Flight</span>
             <nav class="mdl-navigation">
                 <a class="mdl-navigation__link" href="home.php">Home</a>
                 <a class="mdl-navigation__link" href="">About</a>
