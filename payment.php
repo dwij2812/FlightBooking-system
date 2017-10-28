@@ -85,8 +85,8 @@ if(!isset($_SESSION["Customer_id"])){
                         </b>
                         <br>
                         <div class="mdl-shadow--16dp" style="background-color:#000000"><br>
-                        <form action="bookticket.php">
-                            <input type="submit" value="Confirm and Procceed" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                        <form action="bookticket.php" method="POST">
+                            <input type="submit" value="Confirm and Procceed" name="pay" id="pay" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
                         </form>
 	                    </div>  
                     </div>
