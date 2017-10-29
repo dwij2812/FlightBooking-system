@@ -8,7 +8,7 @@ $Arrival = $_POST['Arrival'];
 $Fare = $_POST['Fare'];
 
 if (isset($_POST['Add_Flight'])){
-    $sql="INSERT INTO flight VALUES('".$Flight_no."','".$Source."','".$Destination."','".$Departure."','".$Arrival."','".$Fare."')";
+    $sql="INSERT INTO flight VALUES(DEFAULT,'".$Flight_no."','".$Source."','".$Destination."','".$Departure."','".$Arrival."','".$Fare."')";
     $result=mysqli_query($conn,$sql);
     if(!$result)
     {
