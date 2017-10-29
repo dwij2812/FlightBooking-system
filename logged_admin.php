@@ -82,11 +82,11 @@
                                 </h3>
                             </div>
                             <div class="mdl-shadow--16dp" style="background-color:#f4b342"><br>
-                            <a class="mdl-navigation__link" href="home.php"><div class="mdl-typography--title" style="color:#000000;font-size:15px"><b>VIEW USERS</b></div></a>
+                            <a class="mdl-navigation__link" href="viewuser.php"><div class="mdl-typography--title" style="color:#000000;font-size:15px"><b>VIEW USER BOOKINGS</b></div></a>
                             <br>
                             </div>
                             <div class="mdl-shadow--16dp" style="background-color:#f4b342"><br>
-                            <a class="mdl-navigation__link" href="home.php"><div class="mdl-typography--title" style="color:#000000;font-size:15px"><b>DELETE USERS</b></div></a>
+                            <a class="mdl-navigation__link" href="delete_user.php"><div class="mdl-typography--title" style="color:#000000;font-size:15px"><b>DELETE USERS</b></div></a>
                             <br>
                             </div>
                         

@@ -1,14 +1,8 @@
 <?php
 require 'db_conn.php';
-$Flight_no = $_POST['Flight_no'];
-$Source = $_POST['Source'];
-$Destination = $_POST['Destination'];
-$Departure = $_POST['Departure'];
-$Arrival = $_POST['Arrival'];
-$Fare = $_POST['Fare'];
-
-if (isset($_POST['Add_Flight'])){
-    $sql="INSERT INTO flight VALUES(DEFAULT,'".$Flight_no."','".$Source."','".$Destination."','".$Departure."','".$Arrival."','".$Fare."')";
+$Customer_id = $_POST['delete_user'];
+if (isset($_POST['cancel'])){
+    $sql="DELETE FROM  customerlogin WHERE Customer_id='".$Customer_id."'";
     $result=mysqli_query($conn,$sql);
     if(!$result)
     {
@@ -16,7 +10,7 @@ if (isset($_POST['Add_Flight'])){
     }
     else
     {
-        echo '<script type="text/javascript">alert("Flight Successfully added");(window.location = "admin.php");</script>';	
+        echo '<script type="text/javascript">alert("User Successfully Removed");(window.location = "admin.php");</script>';	
     }
 }
 ?>
@@ -70,7 +64,7 @@ if (isset($_POST['Add_Flight'])){
         <br><br><br>
         <Img Src="confirm.png" align="center" height="25%" ALT="confirmation tick">
         <br><br><br>
-        <div class="mdl-typography--title">Flight Has been added successfully to the Servers</div>
+        <div class="mdl-typography--title">User Has been Removed successfully from the Servers</div>
         </div>
 
 
