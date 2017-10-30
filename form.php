@@ -8,6 +8,15 @@
     <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
     <script src="gen_validatorv4.js" type="text/javascript"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker({maxDate: "0",changeMonth: true,
+            changeYear: true,});
+  } );
+  </script>
 </head>
 
 
@@ -77,7 +86,7 @@
                         <div class="mdl-typography--title" style="color:#ffffff">Date Of Birth</div>
                         <br>
                         </div><br><br>
-                        <input type="date" id="DOB" onchange="checkDate()" name="DOB" required><br>
+                        <input type="text" id="datepicker" onchange="checkDate()" name="DOB" required><br>
                         <br>
                         <br>
 

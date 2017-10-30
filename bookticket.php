@@ -19,7 +19,7 @@ if (isset($_POST['pay'])){
     }
     else
     {
-        echo '<script type="text/javascript">alert("Your Tickes Have been booked!");</script>';	
+        echo '<script type="text/javascript">alert("Your Tickets Have been booked!");</script>';	
     }
 }
 ?>
