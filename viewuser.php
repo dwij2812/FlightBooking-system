@@ -68,9 +68,10 @@ session_start();
     </tr>
   </thead>
   <tbody>
+  <center>
         
             <?php
-                $sql = "SELECT * from booking order by Cid";
+                $sql = "SELECT * from booking order by TicketID";
                 $result = mysqli_query($conn,$sql);
 	            while($row=mysqli_fetch_assoc($result)){
                     echo "<tr>";
@@ -84,6 +85,7 @@ session_start();
                     echo "</tr>";
                 }
 	        ?>
+            </center>
             </tbody>
 </table>
 <br><br>

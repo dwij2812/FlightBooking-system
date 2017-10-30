@@ -31,6 +31,7 @@ session_start();
         selectOtherMonths: true,
         required: true,
         showOn: "focus",
+        showButtonPanel: true,
         numberOfMonths: 1,
     });
 

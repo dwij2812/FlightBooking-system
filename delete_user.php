@@ -57,10 +57,11 @@ require 'db_conn.php';
         <table class="mdl-data-table mdl-js-data-table mdl-shadow--8dp">
   <thead>
     <tr>
-<th>Select user</th>      
+    
 <th>Customer ID</th>
       <th>First Name</th>
       <th>Email-ID</th>
+      <th>Select user</th>  
     </tr>
   </thead>
   <tbody>
@@ -70,13 +71,12 @@ require 'db_conn.php';
                 $result = mysqli_query($conn,$sql);
 	            while($row=mysqli_fetch_assoc($result)){
                     echo "<tr>";
-echo "<td><label class=\"mdl-radio mdl-js-radio mdl-js-ripple-effect\" for=\"".$row['Customer_id']."\">
-                    <input type=\"radio\" id=\"".$row['Customer_id']."\" class=\"mdl-radio__button\" name=\"cancel_flight\" value=\"".$row['Customer_id']."\">
-                    </label></td>";
                     echo "<td><b>" . $row['Customer_id'] . "</b></td>";
                     echo "<td>" . $row['First_name'] . "</td>";
                     echo "<td>" . $row['email_id'] . "</td>";
-                                   
+                    echo "<td><label class=\"mdl-radio mdl-js-radio mdl-js-ripple-effect\" for=\"".$row['Customer_id']."\">
+                    <input type=\"radio\" id=\"".$row['Customer_id']."\" class=\"mdl-radio__button\" name=\"cancel_flight\" value=\"".$row['Customer_id']."\">
+                    </label></td>";
                     echo "</tr>";
                 }
 	        ?>

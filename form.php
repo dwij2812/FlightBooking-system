@@ -13,8 +13,10 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script>
   $( function() {
-    $( "#datepicker" ).datepicker({maxDate: "0",changeMonth: true,
-            changeYear: true,});
+    $( "#DOB" ).datepicker({maxDate: "0",changeMonth: true,
+            changeYear: true,showButtonPanel: true,dateFormat: 'dd-mm-yy',autoclose: true}).on('changeDate', function(e){
+    $(this).datepicker('hide');
+});;
   } );
   </script>
 </head>
@@ -86,7 +88,10 @@
                         <div class="mdl-typography--title" style="color:#ffffff">Date Of Birth</div>
                         <br>
                         </div><br><br>
-                        <input type="text" id="datepicker" onchange="checkDate()" name="DOB" required><br>
+                        <div class="mdl-textfield mdl-js-textfield">
+                        <input class="mdl-textfield__input" type="text" id="DOB" onchange="checkDate()" name="DOB" required><br>
+                        <label class="mdl-textfield__label" for="DOB">Date Of Birth</label>
+                            </div>
                         <br>
                         <br>
 
