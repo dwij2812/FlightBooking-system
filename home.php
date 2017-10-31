@@ -31,12 +31,11 @@ session_start();
         maxDate: "+3M",
         dateFormat: 'dd-mm-yy',
         showOtherMonths: true,
-        changeMonth: true,
         selectOtherMonths: true,
         required: true,
         showOn: "focus",
         showButtonPanel: true,
-        numberOfMonths: 1,
+        numberOfMonths: 2,
     });
 
     $('#from').change(function () {
@@ -47,7 +46,7 @@ session_start();
         $('#to').val('').removeAttr('disabled').removeClass('hasDatepicker').datepicker({
             dateFormat: 'dd-mm-yy',
             minDate: date_diff,
-            maxDate: maxDate_d
+            maxDate: maxDate_d,
         });
     });
 

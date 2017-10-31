@@ -16,11 +16,12 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script>
   $( function() {
-    $( "#DOB" ).datepicker({maxDate: "0",changeMonth: true,
-            changeYear: true,showButtonPanel: true,dateFormat: 'dd-mm-yy',autoclose: true}).on('changeDate', function(e){
-    $(this).datepicker('hide');
+    $( "#DOB" ).datepicker({maxDate: "0",defaultDate: "-18y",changeMonth: true,
+            changeYear: true,showButtonPanel: true,required: true,dateFormat: 'dd-mm-yy',yearRange: "1900:+nn",showOn: "focus",}).on('changeDate', function (e) {
+                $("#DOB").datepicker('hide');
 });;
   } );
+
   </script>
   
 </head>
@@ -221,20 +222,23 @@
     <script  type="text/javascript">
  var frmvalidator = new Validator("signin");
  frmvalidator.addValidation("First-Name","req","Please enter your First Name");
+ frmvalidator.addValidation("First-Name","alphabetic","First Name can be in alphabetical form only");
  frmvalidator.addValidation("First-Name","maxlen=20","Max length for First Name is 20");
  
  frmvalidator.addValidation("Last-Name","req","Please enter your Last Name");
+ frmvalidator.addValidation("Last-Name","alphabetic","Last Name can be in alphabetical form only");
  frmvalidator.addValidation("Last-Name","maxlen=20");
  
  frmvalidator.addValidation("Email","maxlen=50");
  frmvalidator.addValidation("Email","req");
  frmvalidator.addValidation("Email","email");
  
+ frmvalidator.addValidation("Mobile-No","minlen=10","Please Enter a valid phone number");
  frmvalidator.addValidation("Mobile-No","maxlen=10","Please Enter a valid phone number");
  frmvalidator.addValidation("Mobile-No","req","Entering your mobile no is compulsory");
  frmvalidator.addValidation("Mobile-No","numeric","Please Enter a valid phone number");
  
- frmvalidator.addValidation("Address","maxlen=50");
+ frmvalidator.addValidation("Address","maxlen=1000");
 
  frmvalidator.addValidation("r_password","req","Please confirm the password you want to set!");
  frmvalidator.addValidation("Password","req","Please Provide us with a Password to secure your account");

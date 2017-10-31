@@ -1,5 +1,8 @@
+<?php
+session_start();
+session_destroy();
+?>
 <Html>
-
 <Head>
     <Title>Flight Booking System</Title>
     <link rel="stylesheet" href="Front with CSS.css">

@@ -91,7 +91,7 @@
                         <br>
                         </div>
                         <br><br>
-	<form action="home.php">
+<form action="logout.php">
 <input type="submit" value="Log Out" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
 </form>
 	
