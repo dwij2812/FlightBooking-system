@@ -73,11 +73,6 @@
                             <label class="mdl-textfield__label" for="Password">Password</label>
                         </div><br><br>
                         <input type="submit" name="login" value="Login" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"/>
-                        
-                        <input type="button" name="forget" value="Forgot Password" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"/>
-        
-                        <br><br>
-                        <input type="button" value="Sign Up" name="redir" onclick="windows.location='form.php';" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"/>
 
                     </div>
                     <br><br><br><br><br><br><br><br>

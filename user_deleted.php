@@ -1,6 +1,6 @@
 <?php
 require 'db_conn.php';
-$Customer_id = $_POST['delete_user'];
+$Customer_id = $_POST['cancel_flight'];
 if (isset($_POST['cancel'])){
     $sql="DELETE FROM  customerlogin WHERE Customer_id='".$Customer_id."'";
     $result=mysqli_query($conn,$sql);
