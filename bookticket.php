@@ -40,7 +40,7 @@ if (isset($_POST['pay'])){
         <header class="mdl-layout__header">
             <div class="mdl-layout__header-row">
                 <!-- Title -->
-                <span class="mdl-layout-title">Search Results</span>
+                <span class="mdl-layout-title">Confirmation</span>
                 <!-- Add spacer, to align navigation to the right -->
                 <div class="mdl-layout-spacer"></div>
                 <!-- Navigation. We hide it in small screens. -->
@@ -54,7 +54,7 @@ if (isset($_POST['pay'])){
             </div>
         </header>
         <div class="mdl-layout__drawer">
-            <span class="mdl-layout-title">Success</span>
+            <span class="mdl-layout-title">Confirmation</span>
             <nav class="mdl-navigation">
                 <a class="mdl-navigation__link" href="home.php">Home</a>
                 <a class="mdl-navigation__link" href="form.php">Signup</a>
