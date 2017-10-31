@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.teal-orange.min.css" />
     <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
     <script src="gen_validatorv4.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/footer-distributed-with-address-and-phones.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -19,6 +22,7 @@
 });;
   } );
   </script>
+  
 </head>
 
 
@@ -33,7 +37,7 @@
                 <!-- Navigation. We hide it in small screens. -->
                 <nav class="mdl-navigation mdl-layout--large-screen-only">
                     <a class="mdl-navigation__link" href="home.php">Home</a>
-                    <a class="mdl-navigation__link" href="">About</a>
+                    <a class="mdl-navigation__link" href="Aboutus.php">About</a>
                     <a class="mdl-navigation__link" href="front.php">Login</a>
                     <a class="mdl-navigation__link" href="Aboutus.php">About Us</a>
                     <a class="mdl-navigation__link" href="admin.php">Administrators</a>

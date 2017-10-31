@@ -14,6 +14,9 @@ if(!isset($_SESSION["Customer_id"])){
     <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
     <script src="gen_validatorv4.js" type="text/javascript"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/footer-distributed-with-address-and-phones.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
 </head>
 
 <body background="airplane.jpg">
@@ -95,6 +98,60 @@ if(!isset($_SESSION["Customer_id"])){
                 <br><br>
 
             </div>
+            <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <h3>Tap<span></span>tick</h3>
+
+            <p class="footer-links">
+                <a href="home.php">Home</a> ·
+                <a href="form.php">Signup</a> .
+                <a href="front.php">Login</a> ·
+                <a href="Aboutus.php">About Us</a> ·
+                <a href="Admin_login.php">Administrators</a>
+            </p>
+
+            <p class="footer-company-name">Taptick &copy; 2017</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>VIT UNIVERSITY</span> Chennai, India</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+91 67856 73456</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:dwijhariket@gmail.com">support@taptick.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>About the company</span> Providing the best ticket booking experience with the least use of user inputs to deliver a hassle free experience and the best fares on our flights.
+            </p>
+
+            <div class="footer-icons">
+
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/dwij2812/FlightBooking-system"><i class="fa fa-github"></i></a>
+
+            </div>
+
+        </div>
+
+    </footer>
         </main>
         </body>
         </html>
