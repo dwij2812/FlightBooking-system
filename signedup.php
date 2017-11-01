@@ -24,7 +24,7 @@
         }
         else
         {
-			echo '<script type="text/javascript">alert("You have successfully Signed Up");(window.location = "home.php");</script>';	
+			echo '<script type="text/javascript">alert("You have successfully Signed Up");(window.location = front.php");</script>';	
         }
         }
         else{
