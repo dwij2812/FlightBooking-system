@@ -86,7 +86,7 @@ if (isset($_POST['Search']))
                     echo "<td>" . $row['Arr'] . "</td>";
                     echo "<td>" . $row['Fare'] . "</td>";
                     echo "<td><label class=\"mdl-radio mdl-js-radio mdl-js-ripple-effect\" for=\"".$row['F_no']."\">
-                    <input type=\"radio\" id=\"".$row['F_no']."\" class=\"mdl-radio__button\" name=\"options\" value=\"".$row['F_no']."\">
+                    <input type=\"radio\" id=\"".$row['F_no']."\" class=\"mdl-radio__button\" name=\"options\" value=\"".$row['F_no']."\" required>
                     </label></td>";
                     $_SESSION["arr"]=$row['F_no'];
                     $_SESSION["Fare2"]=$row['Fare'];
