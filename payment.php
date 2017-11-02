@@ -2,7 +2,7 @@
 session_start();
 require 'db_conn.php';
 if(!isset($_SESSION["Customer_id"])){
-    echo '<script type="text/javascript">alert("Please Login First and then procceed.");window.location= "home.php";</script>';
+    echo '<script type="text/javascript">alert("Please Login First and then procceed.");window.location= "front.php";</script>';
 }
 ?>
 <html>

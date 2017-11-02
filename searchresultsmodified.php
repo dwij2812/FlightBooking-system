@@ -18,6 +18,7 @@ if (isset($_POST['Search']))
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/footer-distributed-with-address-and-phones.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <script src="gen_validatorv4.js" type="text/javascript"></script>
     <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
 </head>
 
@@ -73,7 +74,7 @@ if (isset($_POST['Search']))
     </tr>
   </thead>
   <tbody>
-        <form action='flight_selected.php'>
+        <form action='flight_selected.php' id="search1">
             <?php
                 $sql = "SELECT * from flight where Origin='".$Source."' and Destination='".$Destination."'";
                 $result = mysqli_query($conn,$sql);
@@ -113,6 +114,10 @@ if (isset($_POST['Search']))
                     </div>
                     </div>
         </form>
+        <script  type="text/javascript">
+ var frmvalidator = new Validator("search1");
+ frmvalidator.addValidation("options","req","Please select atleast one flight to continue");
+ </script>
         </div>
         </center>
         </div>
