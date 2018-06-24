@@ -15,7 +15,7 @@
     "chai": "3.5.0",
     "chai-jquery": "2.0.0",
     "del": "2.2.2",
-    "drool": "0.4.0",
+    "drool": "0.6.0",
     "escodegen": "1.10.0",
     "google-closure-compiler": "",
     "gulp": "3.9.1",
