@@ -23,7 +23,7 @@
     "gulp-cache": "0.4.6",
     "gulp-closure-compiler": "0.4.0",
     "gulp-concat": "2.6.1",
-    "gulp-connect": "5.5.0",
+    "gulp-connect": "5.7.0",
     "gulp-css-inline-images": "0.1.1",
     "gulp-csso": "1.0.0",
     "gulp-file": "0.3.0",
