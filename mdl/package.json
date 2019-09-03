@@ -35,7 +35,7 @@
     "gulp-imagemin": "3.4.0",
     "gulp-jscs": "4.1.0",
     "gulp-jshint": "2.1.0",
-    "gulp-load-plugins": "1.5.0",
+    "gulp-load-plugins": "1.6.0",
     "gulp-marked": "1.0.0",
     "gulp-mocha-phantomjs": "0.12.2",
     "gulp-open": "2.1.0",
