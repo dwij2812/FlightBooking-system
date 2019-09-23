@@ -38,7 +38,7 @@
     "gulp-load-plugins": "1.6.0",
     "gulp-marked": "1.0.0",
     "gulp-mocha-phantomjs": "0.12.2",
-    "gulp-open": "2.1.0",
+    "gulp-open": "3.0.1",
     "gulp-rename": "1.4.0",
     "gulp-replace": "0.5.4",
     "gulp-sass": "3.0.0",
